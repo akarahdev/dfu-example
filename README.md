@@ -1,13 +1,15 @@
-# DFU Notes
+# DFU Data Fixing Notes
 Note: this assumes a basic understanding of optics, type systems, and Codecs
 
 ## Prior Reading
 - https://docs.fabricmc.net/develop/codecs
 - https://docs.neoforged.net/docs/datastorage/codecs/
+
 A basic understanding of Codecs and DFU's type system is required if you want to understand this document.
+These codecs are the other half to this data fixing system basically, this system would not work without their 
+underlying logic.
 
 ## Type System
-
 ### Dynamic
 Represents any serialized value in any format (NBT, JSON, etc.)
 This is the format used by Codecs between serialization and deserialization stages.
