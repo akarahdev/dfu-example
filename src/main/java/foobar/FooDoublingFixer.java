@@ -1,3 +1,5 @@
+package foobar;
+
 import com.mojang.datafixers.*;
 import com.mojang.datafixers.schemas.Schema;
 

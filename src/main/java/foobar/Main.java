@@ -2,6 +2,7 @@ import com.google.gson.JsonObject;
 import com.mojang.datafixers.DataFixerBuilder;
 import com.mojang.serialization.Dynamic;
 import com.mojang.serialization.JsonOps;
+import foobar.*;
 
 void main() {
     var dataFixerBuilder = new DataFixerBuilder(2);

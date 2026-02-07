@@ -1,3 +1,5 @@
+package foobar;
+
 import com.mojang.datafixers.DSL;
 
 public class TypeReferences {

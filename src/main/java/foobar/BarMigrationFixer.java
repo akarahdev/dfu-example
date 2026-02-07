@@ -1,4 +1,5 @@
-import com.mojang.datafixers.DSL;
+package foobar;
+
 import com.mojang.datafixers.DataFix;
 import com.mojang.datafixers.TypeRewriteRule;
 import com.mojang.datafixers.schemas.Schema;
