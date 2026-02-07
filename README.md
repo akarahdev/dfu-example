@@ -70,7 +70,7 @@ and the type the rewrite result worked with, are the same type
 
 A few are responsible for applying the primary logic behind rewrite rules.
 
-#### fixEverywhereTyped
+#### fixTypeEverywhereTyped
 This uses optics to find all instances of a type and apply a modifier to them.
 In an ideal situation, you should be using the optics in this function.
 If you get "No such children" errors when using the optics, you should fall back to other methods.
@@ -79,6 +79,9 @@ If you get "No such children" errors when using the optics, you should fall back
 This uses a fallback of the Dynamic instances to allow you to make any changes.
 Note that this does not seem
 
+#### Patterns
+Methods ending in `Typed` operate on a `Typed` instance, which appears to be a `Dynamic` + a `Type`.
+Methods not ending in `Typed` operate on a `Dynamic` instance.
 ## Error Handling
 If you get an error, you most likely used one of the methods wrong or violated the rules of a schema.
 If you get a "No more children" error, an optic tried to traverse into something that doesn't exist.
