@@ -18,16 +18,8 @@ public class FooDoublingFixer extends DataFix {
                             typed.get(DSL.remainderFinder())
                     );
                     return typed.update(
-                            DSL.remainderFinder(),
-                            dyn -> {
-                                var nd =  dyn
-                                        .set(
-                                                "foo",
-                                                dyn.createInt(2)
-                                        );
-                                System.out.println(nd);
-                                return nd;
-                            }
+                            DSL.fieldFinder("foo", DSL.intType()),
+                            v -> v * 2
                     );
                 }
         );
